@@ -1,0 +1,5 @@
+Frequency: 100
+RobotIP: 198.18.0.1
+RobotPort: 9559
+VelocityCmdTopicName: /cmd_vel
+JointStateTopicName: /joint_state
