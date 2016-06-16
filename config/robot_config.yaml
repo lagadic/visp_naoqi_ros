@@ -1,5 +1,10 @@
 Frequency: 100
 RobotIP: 198.18.0.1
 RobotPort: 9559
-VelocityCmdTopicName: /cmd_vel
-JointStateTopicName: /joint_state
+VelocityCmdTopicName: /robot/controls/joint_states
+PublishRobotState: false
+JointStateTopicName:  /test/robot/sensors/robot_state
+# Is JointStateMcMsg is true use a geometry_msg/joint_state msg, otherwise use the MCRobotState.msg
+UseMCRobotState: true 
+PublishTFdata: false
+TFname: oMh_close_loop_CameraLeftEye #qrcode_M_e_RArm

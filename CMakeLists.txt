@@ -10,7 +10,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
   std_msgs
+  mc_robot_msgs
   tf
+  visp_bridge
 )
 
 find_package(VISP REQUIRED)
@@ -43,7 +45,9 @@ catkin_package(
   roscpp
   sensor_msgs
   std_msgs
-  tf 
+  mc_robot_msgs
+  tf
+  visp_bridge
 
   DEPENDS 
   VISP
@@ -99,3 +103,5 @@ target_link_libraries(visp_naoqi_ros
 )
 message("NAOqi VISPNAOQIBRIDGE: Hint ${NAOqi_LIBRARY_HINTS}")
 message("NAOqi VISPNAOQIBRIDGE: LIB ${NAOqi_LIBRARY}")
+
+
